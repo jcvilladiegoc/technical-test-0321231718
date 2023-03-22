@@ -4,6 +4,27 @@
     height: 718px;
     opacity: 0.8;
 
+    button.custom-button {
+        padding: 0px 8px;
+        border: 0px;
+        height: 36px;
+        background-color: transparent;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        color: white;
+    }
+
+    button.custom-button:hover {
+        background-color: rgba($color: white, $alpha: 0.8);
+        color: black;
+    }
+
+    button.custom-button.active {
+        background-color: white;
+        color: black;
+    }
+
     .header {
 
         height: 140px;
@@ -28,6 +49,7 @@
         gap: 24px;
         height: 58px;
         background-color: rgba($color: green, $alpha: 0.5);
+        background-color: #dd0031;
         align-items: center;
     }
 
