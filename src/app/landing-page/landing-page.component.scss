@@ -3,6 +3,7 @@
     background-image: url(/assets/imgs/wireframe-one.png);
     height: 718px;
     opacity: 0.8;
+    opacity: 1;
 
     button.custom-button {
         padding: 0px 8px;
@@ -23,6 +24,11 @@
     button.custom-button.active {
         background-color: white;
         color: black;
+    }
+
+    button.custom-button.reserva {
+        background-color: #dd0031;
+        color: white;
     }
 
     .header {
@@ -55,36 +61,51 @@
 
     .search {
         background-color: rgba($color: purple, $alpha: 0.5);
+        background-image: url(/assets/imgs/pexels-chan-walrus-941861.jpg);
+        background-size: contain;
         height: 520px;
         display: grid;
         align-items: end;
-    }
 
-    .form-group {
-        background-color: rgba($color: orange, $alpha: 0.5);
-        height: 74px;
-        display: grid;
-        justify-items: center;
+        .form-group {
+            background-color: rgba($color: orange, $alpha: 0.5);
+            background-color: transparent;
+            height: 74px;
+            display: grid;
+            justify-items: center;
+        }
+
     }
 
     .search-container {
+
         width: 1170px;
         background-color: rgba($color: blue, $alpha: 0.5);
         height: 74px;
-    }
 
-    .form-inputs {
+        .form-inputs {
 
-        background-color: rgba($color: blue, $alpha: 0.5);
-        height: 64px;
-        border-top: solid 10px rgba($color: pink, $alpha: 0.5);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+            background-color: rgba($color: blue, $alpha: 0.5);
+            background-color: black;
+            height: 64px;
+            border-top: solid 10px rgba($color: pink, $alpha: 0.5);
+            border-top-color: #424242;
+            border-top-color: #dd0031;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
 
-        input, button {
-            width: 210px;
-            height: 34px;
+            input, button {
+                width: 210px;
+                height: 34px;
+            }
+
+            input {
+                padding: 4px;
+                height: 24px;
+                outline: none;
+            }
+
         }
 
     }
