@@ -5,32 +5,6 @@
     opacity: 0.8;
     opacity: 1;
 
-    button.custom-button {
-        padding: 0px 8px;
-        border: 0px;
-        height: 36px;
-        background-color: transparent;
-        font-weight: bold;
-        border-radius: 6px;
-        cursor: pointer;
-        color: white;
-    }
-
-    button.custom-button:hover {
-        background-color: rgba($color: white, $alpha: 0.8);
-        color: black;
-    }
-
-    button.custom-button.active {
-        background-color: white;
-        color: black;
-    }
-
-    button.custom-button.reserva {
-        background-color: #dd0031;
-        color: white;
-    }
-
     .header {
 
         height: 140px;
@@ -129,12 +103,81 @@
     }
 
     .footer {
+
         margin-top: 3rem;
+        background-image: url(/assets/imgs/wireframe-footer.png);
+        background-image: url(/assets/imgs/pexels-asman-chema-594077.jpg);
+        background-size: cover;
+        height: 590px;
+        // height: 670px;
+
+        .mask {
+
+            display: block;
+            background-color: rgba($color: pink, $alpha: 0.5);
+            background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.5) 100%);
+
+            .information-section {
+                height: 370px;
+                background-color: rgba($color: brown, $alpha: 0.5);
+                background-color: transparent;
+                max-width: 80%;
+                width: 100%;
+                margin: auto;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 150px;
+            }
+
+            .author-section {
+
+                height: 70px;
+                background-color: rgba($color: yellow, $alpha: 0.5);
+                background-color: #1f2127;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                color: white;
+
+                span a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+        }
     }
 
 }
 
 a.header-link {
     text-decoration: none;
+    color: white;
+}
+
+button.custom-button {
+    padding: 0px 8px;
+    border: 0px;
+    height: 36px;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+button.custom-button:hover {
+    background-color: rgba($color: white, $alpha: 0.8);
+    color: black;
+}
+
+button.custom-button.active {
+    background-color: white;
+    color: black;
+}
+
+button.custom-button.reserva {
+    background-color: #dd0031;
     color: white;
 }
