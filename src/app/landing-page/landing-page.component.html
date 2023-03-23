@@ -52,4 +52,22 @@
             </div>
         </div>
     </div>
+    <div class="result-search">
+        <div class="result-search-container">
+            <app-room-card></app-room-card>
+            <app-room-card></app-room-card>
+            <app-room-card></app-room-card>
+            <app-room-card></app-room-card>
+            <app-room-card></app-room-card>
+            <app-room-card></app-room-card>
+        </div>
+        <mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+        </mat-paginator>
+    </div>
+    <div class="footer">
+        Soy un footer
+    </div>
 </div>

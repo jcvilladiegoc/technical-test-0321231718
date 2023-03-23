@@ -1,0 +1,76 @@
+.room-card-container {
+
+    background-image: url('/assets/imgs/card.png');
+    width: 364px;
+    height: 470px;
+    height: auto;
+    border: solid 1px black;
+    border-radius: 14px;
+    overflow: hidden;
+
+    .photo {
+
+        height: 156px;
+        height: 245px;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .room-card-footer {
+
+        background-color: white;
+        padding: 12px 24px;
+
+        .title {
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-weight: bold;
+            color: gray;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+    }
+
+    button.custom-button {
+        padding: 0px 8px;
+        border: 0px;
+        height: 36px;
+        background-color: transparent;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        color: white;
+    }
+
+    button.custom-button:hover {
+        background-color: rgba($color: white, $alpha: 0.8);
+        color: black;
+    }
+
+    button.custom-button.active {
+        background-color: white;
+        color: black;
+    }
+
+    button.custom-button.reserva {
+        background-color: #dd0031;
+        color: white;
+    }
+
+    button.active.custom-button.outline {
+        border: solid 1px #525251 !important;
+    }
+
+}

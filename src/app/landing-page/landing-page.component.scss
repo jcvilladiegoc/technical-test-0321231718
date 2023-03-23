@@ -110,6 +110,28 @@
 
     }
 
+    .result-search {
+
+        display: grid;
+        justify-content: center;
+        width: 100%;
+
+        .result-search-container {
+            max-width: 1170px;
+            width: 100%;
+            padding: 3rem 0rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: space-between;
+        }
+
+    }
+
+    .footer {
+        margin-top: 3rem;
+    }
+
 }
 
 a.header-link {
