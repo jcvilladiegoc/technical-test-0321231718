@@ -1,0 +1,36 @@
+button {
+    padding: 0px 8px;
+    border: 0px;
+    height: 36px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+button.primary {
+    background-color: #dd0031;
+    color: white;
+}
+
+button.secondary {
+    background-color: black;
+    color: white;
+}
+
+button.primary.outline {
+    border: solid 1px #dd0031 !important;
+    background-color: transparent;
+    color: #dd0031;
+}
+
+button.secondary.outline {
+    border: solid 1px #000000 !important;
+    background-color: transparent;
+    color: #000000;
+}

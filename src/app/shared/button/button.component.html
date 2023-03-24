@@ -1,0 +1,10 @@
+<button [ngClass]="{
+    'primary': theme === 'primary',
+    'secondary': theme === 'secondary',
+    'outline': outline
+    }"
+    [ngStyle]="{ 'width': width }">
+    <ng-content select="[prefix]"></ng-content>
+    <ng-content></ng-content>
+    <ng-content select="[sufix]"></ng-content>
+</button>
