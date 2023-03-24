@@ -43,34 +43,4 @@
 
     }
 
-    button.custom-button {
-        padding: 0px 8px;
-        border: 0px;
-        height: 36px;
-        background-color: transparent;
-        font-weight: bold;
-        border-radius: 6px;
-        cursor: pointer;
-        color: white;
-    }
-
-    button.custom-button:hover {
-        background-color: rgba($color: white, $alpha: 0.8);
-        color: black;
-    }
-
-    button.custom-button.active {
-        background-color: white;
-        color: black;
-    }
-
-    button.custom-button.reserva {
-        background-color: #dd0031;
-        color: white;
-    }
-
-    button.active.custom-button.outline {
-        border: solid 1px #525251 !important;
-    }
-
 }

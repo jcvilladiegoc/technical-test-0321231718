@@ -47,7 +47,7 @@
                     <input type="text" name="" id="" placeholder="Fecha de salida">
                     <input type="text" name="" id="" placeholder="Cantidad de personas">
                     <input type="text" name="" id="" placeholder="Ciudad destino">
-                    <button class="custom-button reserva active">Buscar</button>
+                    <app-button theme="primary" width="222px">Buscar</app-button>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
         <div class="mask">
             <div class="information-section">
                 <div class="contact-section">
-                    <h2>Contacs</h2>
+                    <h2>Contact information</h2>
                     <p>
                         CRA 25W No. 17 - 65 BRR Vallejo, Monteria 230001
                         <br>
@@ -92,7 +92,8 @@
                         Gallery <br>
                         Testimonials <br>
                         News <br>
-                        Contact us
+                        Contact us <br>
+                        <a routerLink="documentation" style="text-decoration: none; color: inherit">Documentation</a>
                     </p>
                 </div>
                 <div class="newsletter">
@@ -103,7 +104,10 @@
                         <br>
                         You can cancel anytime.
                     </p>
-                    <button class="custom-button reserva active">Subscribirme</button>
+                    <app-button theme="primary">
+                        <mat-icon prefix fontIcon="forward_to_inbox"></mat-icon>
+                        Subscribe me
+                    </app-button>
                 </div>
             </div>
             <div class="author-section">
