@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { RoomCardModule } from '../shared/room-card/room-card.module';
 import { MatPaginatorModule } from '@angular/material/paginator'
+import { ButtonModule } from '../shared/button/button.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { MatPaginatorModule } from '@angular/material/paginator'
     MatIconModule,
     MatButtonModule,
     RoomCardModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    ButtonModule
   ]
 })
 export class LandingPageModule { }

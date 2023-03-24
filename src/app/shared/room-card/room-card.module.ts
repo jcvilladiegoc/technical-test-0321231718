@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RoomCardComponent } from './room-card.component';
+import { ButtonModule } from '../button/button.module';
 
 
 
@@ -9,7 +10,8 @@ import { RoomCardComponent } from './room-card.component';
     RoomCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ButtonModule
   ],
   exports: [
     RoomCardComponent

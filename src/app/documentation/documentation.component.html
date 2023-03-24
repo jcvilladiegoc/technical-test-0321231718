@@ -1,0 +1,83 @@
+<div class="main-container">
+    <div>
+        <h2>Documentation</h2>
+        <hr>
+        <p>The following documentation aims to show those components that are shared within the application that have been developed or custom components.</p>
+        <app-button theme="primary" routerLink="/">
+            <mat-icon prefix fontIcon="home"></mat-icon>
+            Home
+        </app-button>
+        <br>
+    </div>
+    <div>
+        <h2>Buttons</h2>
+        <hr>
+        <p>It was decided to create the button component, since we do not have one that will adapt to the theme of the web application</p>
+    </div>
+    <div>
+        <h2>Basic buttons</h2>
+        <div style="display: flex; gap: 12px;">
+            <app-button theme="primary">Primary</app-button>
+            <app-button theme="secondary">Secondary</app-button>
+        </div>
+    </div>
+    <div style="margin-top: 1rem;">
+        <h2>Outline buttons</h2>
+        <div style="display: flex; gap: 12px;">
+            <app-button theme="primary" [outline]="true">Primary</app-button>
+            <app-button theme="secondary" [outline]="true">Secondary</app-button>
+        </div>
+    </div>
+    <div style="margin-top: 1rem;">
+        <h2>Basic buttons implement element prefix</h2>
+        <div style="display: flex; gap: 12px;">
+            <app-button theme="primary">
+                <mat-icon prefix fontIcon="home"></mat-icon>
+                Home
+            </app-button>
+            <app-button theme="secondary">
+                <mat-icon prefix fontIcon="notifications"></mat-icon>
+                Notifications
+            </app-button>
+        </div>
+    </div>
+    <div style="margin-top: 1rem;">
+        <h2>Basic buttons implement element sufix</h2>
+        <div style="display: flex; gap: 12px;">
+            <app-button theme="primary">
+                <mat-icon sufix fontIcon="campaign"></mat-icon>
+                Create campaign
+            </app-button>
+            <app-button theme="secondary">
+                <mat-icon sufix fontIcon="done_all"></mat-icon>
+                Message read
+            </app-button>
+        </div>
+    </div>
+    <div style="margin-top: 1rem;">
+        <h2>Outline buttons implement element prefix</h2>
+        <div style="display: flex; gap: 12px;">
+            <app-button theme="primary" [outline]="true">
+                <mat-icon prefix fontIcon="home"></mat-icon>
+                Home
+            </app-button>
+            <app-button theme="secondary" [outline]="true">
+                <mat-icon prefix fontIcon="notifications"></mat-icon>
+                Notifications
+            </app-button>
+        </div>
+    </div>
+    <div style="margin-top: 1rem;">
+        <h2>Outline buttons implement element sufix</h2>
+        <div style="display: flex; gap: 12px;">
+            <app-button theme="primary" [outline]="true">
+                <mat-icon sufix fontIcon="campaign"></mat-icon>
+                Create campaign
+            </app-button>
+            <app-button theme="secondary" [outline]="true">
+                <mat-icon sufix fontIcon="done_all"></mat-icon>
+                Message read
+            </app-button>
+        </div>
+    </div>
+</div>
