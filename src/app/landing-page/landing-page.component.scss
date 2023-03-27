@@ -1,0 +1,352 @@
+.main-container {
+
+    background-image: url(/assets/imgs/wireframe-one.png);
+    background-image: none;
+    height: 718px;
+    opacity: 0.8;
+    opacity: 1;
+
+    .header {
+
+        height: 140px;
+        background-color: rgba($color: red, $alpha: 0.5);
+        background-color: black;
+        display: grid;
+        justify-content: center;
+
+        .header-container {
+            width: 100vw;
+            max-width: 1170px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    }
+
+    .nav-list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 24px;
+        height: 58px;
+        background-color: rgba($color: green, $alpha: 0.5);
+        background-color: #dd0031;
+        align-items: center;
+    }
+
+    .search {
+
+        background-color: rgba($color: purple, $alpha: 0.5);
+        background-image: url(/assets/imgs/pexels-chan-walrus-941861.jpg);
+        background-size: contain;
+        height: 520px;
+        display: grid;
+        align-items: end;
+
+        .form-group {
+            background-color: rgba($color: orange, $alpha: 0.5);
+            background-color: transparent;
+            min-height: 74px;
+            display: grid;
+            justify-items: center;
+        }
+
+    }
+
+    .search-container {
+
+        width: 100%;
+        max-width: 1170px;
+        background-color: rgba($color: blue, $alpha: 0.5);
+        min-height: 74px;
+
+        .form-inputs {
+
+            background-color: rgba($color: blue, $alpha: 0.5);
+            background-color: black;
+            height: 64px;
+            border-top: solid 10px rgba($color: pink, $alpha: 0.5);
+            border-top-color: #424242;
+            border-top-color: #dd0031;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            input, button {
+                width: 200px;
+                height: 34px;
+            }
+
+            input {
+                padding: 4px 8px;
+                height: 24px;
+                outline: none;
+            }
+
+            input.thematic {
+                background-color: #ffffff;
+                color: white;
+                border-radius: 6px;
+            }
+
+        }
+
+    }
+
+    .result-search {
+
+        display: grid;
+        justify-content: center;
+        width: 100%;
+
+        .result-search-container {
+            max-width: 1170px;
+            width: 100%;
+            padding: 3rem 0rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+
+    }
+
+    .footer {
+
+        margin-top: 3rem;
+        background-image: url(/assets/imgs/wireframe-footer.png);
+        background-image: url(/assets/imgs/pexels-asman-chema-594077.jpg);
+        background-size: cover;
+        height: 590px;
+        // height: 670px;
+
+        .mask {
+
+            display: block;
+            background-color: rgba($color: pink, $alpha: 0.5);
+            background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.5) 100%);
+
+            .information-section {
+                min-height: 370px;
+                background-color: rgba($color: brown, $alpha: 0.5);
+                background-color: transparent;
+                max-width: 80%;
+                width: 100%;
+                margin: auto;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 150px;
+            }
+
+            .author-section {
+
+                height: 70px;
+                background-color: rgba($color: yellow, $alpha: 0.5);
+                background-color: #1f2127;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                color: white;
+
+                span a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+}
+
+a.header-link {
+    text-decoration: none;
+    color: white;
+}
+
+button.nav-item {
+    padding: 0px 8px;
+    border: 0px;
+    height: 36px;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+button.nav-item:hover {
+    background-color: rgba($color: white, $alpha: 0.8);
+    color: black;
+}
+
+button.nav-item.active {
+    background-color: white;
+    color: black;
+}
+
+button.nav-item.reserva {
+    background-color: #dd0031;
+    color: white;
+}
+
+// mobile
+@media screen and (max-width: 640px) {
+
+    .hidden-sm {
+        display: none !important;
+    }
+
+    .d-block-sm {
+        display: block !important;
+    }
+
+}
+
+// horizoontal mobile
+@media screen and (max-width: 720px) {
+
+    .nav-list.d-block-sm {
+        display: block !important;
+        padding: 5px 0px;
+    }
+
+    .nav-list.d-block-sm.px-12 {
+        padding-left: 12px;
+        padding-right: 12px;
+        position: absolute;
+        width: calc(100% - 24px);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+        height: auto !important;
+        display: none !important;
+    }
+
+    button.nav-item {
+        width: 100%;
+        text-align: start;
+    }
+
+    .result-search-container {
+        width: calc(100% - 40px) !important;
+        margin: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 1185px) {
+
+    input.thematic {
+        width: 17vw !important;
+    }
+
+    :host {
+
+        .form-inputs ::ng-deep app-button {
+
+            button {
+                width: 18vw !important;
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .form-inputs {
+        flex-wrap: wrap;
+        height: auto !important;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        row-gap: 12px;
+    }
+
+    .search {
+        height: 564px !important;
+    }
+
+    input.thematic {
+        width: 180px !important;
+        width: 39.79166666666667vw !important;
+    }
+
+    :host {
+
+        .form-inputs ::ng-deep app-button {
+
+            button {
+                width: 180px !important;
+            }
+
+        }
+
+    }
+
+    .information-section {
+        padding-top: 100px !important;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    input.thematic {
+        max-width: 340px !important;
+        width: 80% !important;
+    }
+
+    :host {
+
+        .form-inputs ::ng-deep app-button {
+
+            width: 100%;
+
+            button {
+                max-width: 360px !important;
+                width: 85% !important;
+                margin: auto;
+            }
+
+        }
+
+    }
+
+}
+
+// 'sm': '640px',
+@media (min-width: 640px) {
+
+}
+
+// 'md': '768px',
+@media (min-width: 768px) {
+
+
+}
+
+// 'lg': '1024px',
+@media (min-width: 1024px) {
+
+}
+
+// 'xl': '1280px',
+@media (min-width: 1280px) {
+
+}
+
+// '2xl': '1536px',
+@media (min-width: 1536px) {
+
+}

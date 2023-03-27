@@ -1,0 +1,123 @@
+<div class="main-container">
+    <div class="header">
+        <div class="header-container">
+            <div class="hidden-sm" style="display: flex; align-items: center; color: white; gap: 6px; padding-left: 24px;">
+                <mat-icon fontIcon="mail" style="font-size: 24px;"></mat-icon>
+                <span>
+                    <a href="mailto:info@myhotel.com" class="header-link"> info@myhotel.com </a>
+                </span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; color: white; margin: auto;">
+                <div style="color: #b08d54">
+                    <mat-icon fontIcon="star" style="font-size: 24px;"></mat-icon>
+                    <mat-icon fontIcon="star" style="font-size: 24px;"></mat-icon>
+                    <mat-icon fontIcon="star" style="font-size: 24px;"></mat-icon>
+                    <mat-icon fontIcon="star" style="font-size: 24px;"></mat-icon>
+                    <mat-icon fontIcon="star" style="font-size: 24px;"></mat-icon>
+                </div>
+                <span style="font-size: 18px;">
+                    HOTEL MONTERIA
+                </span>
+                <span>
+                    Monteria - Cordoba, Colombia
+                </span>
+            </div>
+            <div class="hidden-sm" style="display: flex; align-items: center; color: white; gap: 6px; padding-right: 24px;">
+                <mat-icon fontIcon="call" style="font-size: 24px;"></mat-icon>
+                <span>
+                    <a href="cel:+573022549615" class="header-link"> (+57) 3022549615 </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-list d-block-sm" style="display: none;">
+        <mat-icon fontIcon="reorder" style="font-size: 24px; display: block; margin: 12px 0px 12px auto; padding-right: 12px; color: #FFFFFF; cursor: pointer;" (click)="toggleShowMenu()"></mat-icon>
+    </nav>
+    <nav class="nav-list" [ngClass]="{ 'd-block-sm px-12': showMenu }">
+        <button class="nav-item active">Home</button>
+        <button class="nav-item">Accomodation</button>
+        <button class="nav-item">About us</button>
+        <button class="nav-item">Gallery</button>
+        <button class="nav-item">Testimonials</button>
+        <button class="nav-item">News</button>
+        <button class="nav-item">Contact us</button>
+    </nav>
+    <div class="search">
+        <div class="form-group">
+            <div class="search-container">
+                <div class="form-inputs">
+                    <input type="text" name="" id="" class="thematic" placeholder="Fecha de entrada">
+                    <input type="text" name="" id="" class="thematic" placeholder="Fecha de salida">
+                    <input type="text" name="" id="" class="thematic" placeholder="Cantidad de personas">
+                    <input type="text" name="" id="" class="thematic" placeholder="Ciudad destino">
+                    <app-button id="search-button" theme="primary" width="222px">Buscar</app-button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="result-search">
+        <div class="result-search-container">
+            <app-room-card></app-room-card>
+            <app-room-card></app-room-card>
+            <app-room-card></app-room-card>
+            <app-room-card></app-room-card>
+            <app-room-card></app-room-card>
+            <app-room-card></app-room-card>
+        </div>
+        <mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+        </mat-paginator>
+    </div>
+    <div class="footer">
+        <div class="mask">
+            <div class="information-section">
+                <div class="contact-section">
+                    <h2>Contact information</h2>
+                    <p>
+                        CRA 25W No. 17 - 65 BRR Vallejo, Monteria 230001
+                        <br>
+                        Córdoba - Colombia
+                    </p>
+                    <p>
+                        <a href="mailto:info@jairoserver.com" style="color: #ffd740; text-decoration: none;">info@jairoserver.com</a>
+                        <br>
+                        <a href="cel:3022549615" style="color: #ffd740; text-decoration: none;">(+57) 3022549615</a>
+                    </p>
+                </div>
+                <div class="explore">
+                    <h2>Explore</h2>
+                    <p>
+                        Home <br>
+                        Accomodation <br>
+                        About us <br>
+                        Gallery <br>
+                        Testimonials <br>
+                        News <br>
+                        Contact us <br>
+                        <a routerLink="documentation" style="text-decoration: none; color: inherit">Documentation</a>
+                    </p>
+                </div>
+                <div class="newsletter">
+                    <h2> Newsletter </h2>
+                    <input type="text" name="" id="" placeholder="Your email" style="padding: 4px; height: 24px; outline: none; border-radius: 24px; padding: 4px 12px">
+                    <p style="margin-top: 1rem;">
+                        Receive last offers and promos without spam.
+                        <br>
+                        You can cancel anytime.
+                    </p>
+                    <app-button theme="primary">
+                        <mat-icon prefix fontIcon="forward_to_inbox"></mat-icon>
+                        Subscribe me
+                    </app-button>
+                </div>
+            </div>
+            <div class="author-section">
+                <span>
+                    © Travel Agency - by <a href="https://github.com/jcvilladiegoc" target="_blank">jcvilladiegoc</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

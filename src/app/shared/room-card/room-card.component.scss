@@ -1,0 +1,47 @@
+.room-card-container {
+
+    background-image: url('/assets/imgs/card.png');
+    background-image: none;
+    max-width: 364px;
+    height: 470px;
+    height: auto;
+    border: solid 1px black;
+    border-radius: 14px;
+    overflow: hidden;
+
+    .photo {
+
+        height: 156px;
+        height: 245px;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .room-card-footer {
+
+        background-color: white;
+        padding: 12px 24px;
+
+        .title {
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-weight: bold;
+            color: gray;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+    }
+
+}
