@@ -1,13 +1,13 @@
 <div class="main-container">
     <div class="header">
         <div class="header-container">
-            <div style="display: flex; align-items: center; color: white; gap: 6px;">
+            <div class="hidden-sm" style="display: flex; align-items: center; color: white; gap: 6px; padding-left: 24px;">
                 <mat-icon fontIcon="mail" style="font-size: 24px;"></mat-icon>
                 <span>
                     <a href="mailto:info@myhotel.com" class="header-link"> info@myhotel.com </a>
                 </span>
             </div>
-            <div style="display: flex; flex-direction: column; align-items: center; color: white;">
+            <div style="display: flex; flex-direction: column; align-items: center; color: white; margin: auto;">
                 <div style="color: #b08d54">
                     <mat-icon fontIcon="star" style="font-size: 24px;"></mat-icon>
                     <mat-icon fontIcon="star" style="font-size: 24px;"></mat-icon>
@@ -22,7 +22,7 @@
                     Monteria - Cordoba, Colombia
                 </span>
             </div>
-            <div style="display: flex; align-items: center; color: white; gap: 6px;">
+            <div class="hidden-sm" style="display: flex; align-items: center; color: white; gap: 6px; padding-right: 24px;">
                 <mat-icon fontIcon="call" style="font-size: 24px;"></mat-icon>
                 <span>
                     <a href="cel:+573022549615" class="header-link"> (+57) 3022549615 </a>
@@ -30,24 +30,27 @@
             </div>
         </div>
     </div>
-    <nav class="nav-list">
-        <button class="custom-button active">Home</button>
-        <button class="custom-button">Accomodation</button>
-        <button class="custom-button">About us</button>
-        <button class="custom-button">Gallery</button>
-        <button class="custom-button">Testimonials</button>
-        <button class="custom-button">News</button>
-        <button class="custom-button">Contact us</button>
+    <nav class="nav-list d-block-sm" style="display: none;">
+        <mat-icon fontIcon="reorder" style="font-size: 24px; display: block; margin: 12px 0px 12px auto; padding-right: 12px; color: #FFFFFF; cursor: pointer;" (click)="toggleShowMenu()"></mat-icon>
+    </nav>
+    <nav class="nav-list" [ngClass]="{ 'd-block-sm px-12': showMenu }">
+        <button class="nav-item active">Home</button>
+        <button class="nav-item">Accomodation</button>
+        <button class="nav-item">About us</button>
+        <button class="nav-item">Gallery</button>
+        <button class="nav-item">Testimonials</button>
+        <button class="nav-item">News</button>
+        <button class="nav-item">Contact us</button>
     </nav>
     <div class="search">
         <div class="form-group">
             <div class="search-container">
                 <div class="form-inputs">
-                    <input type="text" name="" id="" placeholder="Fecha de entrada">
-                    <input type="text" name="" id="" placeholder="Fecha de salida">
-                    <input type="text" name="" id="" placeholder="Cantidad de personas">
-                    <input type="text" name="" id="" placeholder="Ciudad destino">
-                    <app-button theme="primary" width="222px">Buscar</app-button>
+                    <input type="text" name="" id="" class="thematic" placeholder="Fecha de entrada">
+                    <input type="text" name="" id="" class="thematic" placeholder="Fecha de salida">
+                    <input type="text" name="" id="" class="thematic" placeholder="Cantidad de personas">
+                    <input type="text" name="" id="" class="thematic" placeholder="Ciudad destino">
+                    <app-button id="search-button" theme="primary" width="222px">Buscar</app-button>
                 </div>
             </div>
         </div>
