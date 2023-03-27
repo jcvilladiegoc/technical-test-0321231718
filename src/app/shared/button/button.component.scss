@@ -11,10 +11,16 @@ button {
     gap: 4px;
     justify-content: center;
     align-items: center;
+    border: solid 1px transparent;
 }
 
 button.primary {
     background-color: #dd0031;
+    color: white;
+}
+
+button.primary:hover {
+    background-color: #df3e62;
     color: white;
 }
 
@@ -29,8 +35,20 @@ button.primary.outline {
     color: #dd0031;
 }
 
+button.primary.outline:hover {
+    border: solid 1px #dd0031 !important;
+    background-color: #dd0031;
+    color: #FFFFFF;
+}
+
 button.secondary.outline {
     border: solid 1px #000000 !important;
     background-color: transparent;
     color: #000000;
+}
+
+button.secondary.outline:hover {
+    border: solid 1px #000000 !important;
+    background-color: #000000;
+    color: #FFFFFF;
 }
