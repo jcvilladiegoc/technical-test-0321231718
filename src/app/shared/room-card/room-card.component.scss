@@ -1,7 +1,8 @@
 .room-card-container {
 
     background-image: url('/assets/imgs/card.png');
-    width: 364px;
+    background-image: none;
+    max-width: 364px;
     height: 470px;
     height: auto;
     border: solid 1px black;
