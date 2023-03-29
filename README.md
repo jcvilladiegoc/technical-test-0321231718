@@ -1,6 +1,10 @@
 # technical-test-0321231718
 Travel agency
 
+# Home page preview
+
+![image](https://user-images.githubusercontent.com/30032286/228402564-8fefa4b7-c49b-411b-869a-d5df4c14741a.png)
+
 # Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
