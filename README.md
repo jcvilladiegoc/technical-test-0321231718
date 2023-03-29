@@ -3,7 +3,7 @@ Travel agency
 
 # Home page preview
 
-![image](https://user-images.githubusercontent.com/30032286/228402564-8fefa4b7-c49b-411b-869a-d5df4c14741a.png)
+![image](https://user-images.githubusercontent.com/30032286/228403115-7d77e9c4-ba35-4f45-a5b4-3b06fe046787.png)
 
 # Project
 
