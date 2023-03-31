@@ -1,4 +1,5 @@
 import { Base } from "./base";
+import { Hotel } from "./hotel";
 
 export class Room extends Base<Room>  {
 
@@ -7,6 +8,17 @@ export class Room extends Base<Room>  {
     _tax: number = 0;
     _typeOfRoom: 'simple' | 'double' | 'familiar' = 'simple';
     _location: string = '';
+    _hotel: Hotel = null!;
+
+    constructor() {
+        super();
+        this.addRequiredProperty('roomNumber');
+        this.addRequiredProperty('basisCost');
+        this.addRequiredProperty('tax');
+        this.addRequiredProperty('typeRoom');
+        this.addRequiredProperty('location');
+        this.addRequiredProperty('hotel');
+    }
 
     override clone() {
         const room = new Room();
@@ -81,6 +93,20 @@ export class Room extends Base<Room>  {
         }
 
         this._typeOfRoom = value;
+
+    }
+
+    get hotel(): Hotel {
+        return this._hotel;
+    }
+
+    set hotel(value: Hotel) {
+
+        if (!value) {
+            throw new Error('The hotel property cannot be null.');
+        }
+
+        this._hotel = value;
 
     }
 

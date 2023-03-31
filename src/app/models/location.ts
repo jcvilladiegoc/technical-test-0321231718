@@ -1,10 +1,20 @@
 import { Base } from "./base";
+import { Hotel } from "./hotel";
 
 export class Location extends Base<Location>  {
 
     _city: string = '';
     _state: string = '';
     _country: string = '';
+    _hotel: Hotel = null!;
+
+    constructor() {
+        super();
+        this.addRequiredProperty('city');
+        this.addRequiredProperty('state');
+        this.addRequiredProperty('country');
+        this.addRequiredProperty('hotel');
+    }
 
     get city(): string {
         return this._city;
@@ -45,6 +55,20 @@ export class Location extends Base<Location>  {
         }
 
         this._country = value;
+
+    }
+
+    get hotel(): Hotel {
+        return this._hotel;
+    }
+
+    set hotel(value: Hotel) {
+
+        if (!value) {
+            throw new Error('The hotel property cannot be null.');
+        }
+
+        this._hotel = value;
 
     }
 

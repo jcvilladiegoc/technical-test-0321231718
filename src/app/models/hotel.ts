@@ -6,7 +6,7 @@ import { Room } from "./room";
 export class Hotel extends Base<Hotel> {
 
     private _name: string = '';
-    private _location: Location = new Location();
+    private _location: Location = null!;
     private _description: string = '';
     private _qualification: number = 0;
     private _rooms: Room[] = [];
@@ -14,6 +14,8 @@ export class Hotel extends Base<Hotel> {
 
     constructor() {
         super();
+        this.addRequiredProperty('name');
+        this.addRequiredProperty('location');
     }
 
     get name(): string {
