@@ -121,8 +121,24 @@ export class Hotel extends Base<Hotel> {
         return this._services;
     }
 
-    addHotel(room: Room) {
+    addRoom(room: Room) {
         this._rooms.push(room);
+    }
+
+    removeRoomById(id: string) {
+        this._rooms = this._rooms.filter((room) => room.id !== id);
+    }
+
+    removeAllRoom() {
+        this._rooms = [];
+    }
+
+    removeService(service: string) {
+        this._services = this._services.filter((currentService) => currentService !== service);
+    }
+
+    removeAllServices() {
+        this._services = [];
     }
 
     getRooms(): Room[] {
