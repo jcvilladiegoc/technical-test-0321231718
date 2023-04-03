@@ -3,10 +3,10 @@ import { Hotel } from "./hotel";
 
 export class Location extends Base<Location>  {
 
-    _city: string = '';
-    _state: string = '';
-    _country: string = '';
-    _hotel: Hotel = null!;
+    private _city: string = '';
+    private _state: string = '';
+    private _country: string = '';
+    private _hotel: Hotel = null!;
 
     constructor() {
         super();
@@ -31,7 +31,7 @@ export class Location extends Base<Location>  {
     }
 
     get state(): string {
-        return this._city;
+        return this._state;
     }
 
     set state(value: string) {
@@ -45,7 +45,7 @@ export class Location extends Base<Location>  {
     }
 
     get country(): string {
-        return this._city;
+        return this._country;
     }
 
     set country(value: string) {
